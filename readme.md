@@ -1,1 +1,1 @@
-lorem20
+blog webapp created with react
