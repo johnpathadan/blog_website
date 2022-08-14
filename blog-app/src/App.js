@@ -1,27 +1,15 @@
 import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/pagination";
-import "swiper/css";
-import './App.css';
+import Carousel from 're-carousel'
 
-// import required modules
-import { Pagination } from "swiper";
 function App() {
   return (
-    <>
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-        <SwiperSlide><div><h1>Hi</h1></div></SwiperSlide>
-        <SwiperSlide><div><h1>Hi</h1></div></SwiperSlide>
-        <SwiperSlide><div><h1>Hi</h1></div></SwiperSlide>
-        <SwiperSlide><div><h1>Hi</h1></div></SwiperSlide>
-        <SwiperSlide><div><h1>Hi</h1></div></SwiperSlide>
-        <SwiperSlide><div><h1>Hi</h1></div></SwiperSlide>
-        <SwiperSlide><div><h1>Hi</h1></div></SwiperSlide>
-        <SwiperSlide><div><h1>Hi</h1></div></SwiperSlide>
-        <SwiperSlide><div><h1>Hi</h1></div></SwiperSlide>
-      </Swiper>
-    </>
+    <div>
+      <Carousel auto>
+    <div style={{backgroundColor: 'tomato', height: '100%'}}>Frame 1</div>
+    <div style={{backgroundColor: 'orange', height: '100%'}}>Frame 2</div>
+    <div style={{backgroundColor: 'orchid', height: '100%'}}>Frame 3</div>
+  </Carousel>
+    </div>
   );
 }
 
